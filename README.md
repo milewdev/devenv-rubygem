@@ -1,8 +1,8 @@
 [![Gem Version](https://badge.fury.io/rb/mygem.svg)](http://badge.fury.io/rb/mygem)
-[![Build Status](https://travis-ci.org/milewgit/devenv-rubygem.svg.svg?branch=master)](https://travis-ci.org/milewgit/devenv-rubygem.svg)
-[![Code Climate](https://codeclimate.com/github/milewgit/devenv-rubygem.svg.png)](https://codeclimate.com/github/milewgit/devenv-rubygem.svg)
-[![Coverage Status](https://coveralls.io/repos/milewgit/devenv-rubygem.svg/badge.png?branch=master)](https://coveralls.io/r/milewgit/devenv-rubygem.svg?branch=master)
-[![Dependencies](https://gemnasium.com/milewgit/devenv-rubygem.svg.svg)](https://gemnasium.com/milewgit/devenv-rubygem.svg)
+[![Build Status](https://travis-ci.org/milewgit/devenv-rubygem.svg?branch=master)](https://travis-ci.org/milewgit/devenv-rubygem)
+[![Code Climate](https://codeclimate.com/github/milewgit/devenv-rubygem.png)](https://codeclimate.com/github/milewgit/devenv-rubygem)
+[![Coverage Status](https://coveralls.io/repos/milewgit/devenv-rubygem/badge.png?branch=master)](https://coveralls.io/r/milewgit/devenv-rubygem?branch=master)
+[![Dependencies](https://gemnasium.com/milewgit/devenv-rubygem.svg)](https://gemnasium.com/milewgit/devenv-rubygem)
 
 
 ### What is mygem?
