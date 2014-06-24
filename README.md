@@ -6,7 +6,7 @@
 
 
 ### What is mygem?
-TODO
+<TODO: FILL IN DESCRIPTION HERE>
 
 
 ### Documentation
