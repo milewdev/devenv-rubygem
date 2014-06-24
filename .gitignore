@@ -1,0 +1,4 @@
+.DS_Store
+*.gem
+/Gemfile.lock         # ignore since this is a gem project
+/coverage/
