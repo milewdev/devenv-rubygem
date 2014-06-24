@@ -10,5 +10,5 @@ module MyGem
   def self.run(argv)
     puts "Hello, MyGem"
   end
-  
+
 end
