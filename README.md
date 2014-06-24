@@ -38,22 +38,28 @@ In a terminal window on the vm (guest machine):
 $ cd ~/Documents/mygem
 $ ./_test
 --------------------------------------------------------------------------------
-/Library/Ruby/Gems/2.0.0/gems/rest-client-1.6.7/lib/restclient/exceptions.rb:157: warning: assigned but unused variable - message
-/Library/Ruby/Gems/2.0.0/gems/rest-client-1.6.7/lib/restclient/exceptions.rb:167: warning: assigned but unused variable - message
-/Library/Ruby/Gems/2.0.0/gems/rest-client-1.6.7/lib/restclient/response.rb:11: warning: method redefined; discarding old body
-/Library/Ruby/Gems/2.0.0/gems/rest-client-1.6.7/lib/restclient/payload.rb:47: warning: mismatched indentations at 'end' with 'case' at 40
-/Library/Ruby/Gems/2.0.0/gems/simplecov-html-0.8.0/lib/simplecov-html.rb:58: warning: possibly useless use of a variable in void context
+/usr/local/Cellar/ruby/2.1.2_2/lib/ruby/2.1.0/rubygems/defaults/operating_system.rb:2: warning: method redefined; discarding old default_dir
+/usr/local/Cellar/ruby/2.1.2_2/lib/ruby/2.1.0/rubygems/defaults.rb:29: warning: previous definition of default_dir was here
+/usr/local/Cellar/ruby/2.1.2_2/lib/ruby/2.1.0/rubygems/defaults/operating_system.rb:39: warning: method redefined; discarding old default_path
+/usr/local/Cellar/ruby/2.1.2_2/lib/ruby/2.1.0/rubygems/defaults.rb:91: warning: previous definition of default_path was here
+/usr/local/Cellar/ruby/2.1.2_2/lib/ruby/2.1.0/rubygems/defaults/operating_system.rb:47: warning: method redefined; discarding old default_bindir
+/usr/local/Cellar/ruby/2.1.2_2/lib/ruby/2.1.0/rubygems/defaults.rb:116: warning: previous definition of default_bindir was here
+/usr/local/lib/ruby/gems/2.1.0/gems/rest-client-1.6.7/lib/restclient/exceptions.rb:157: warning: assigned but unused variable - message
+/usr/local/lib/ruby/gems/2.1.0/gems/rest-client-1.6.7/lib/restclient/exceptions.rb:167: warning: assigned but unused variable - message
+/usr/local/lib/ruby/gems/2.1.0/gems/rest-client-1.6.7/lib/restclient/response.rb:11: warning: method redefined; discarding old body
+/usr/local/lib/ruby/gems/2.1.0/gems/rest-client-1.6.7/lib/restclient/payload.rb:47: warning: mismatched indentations at 'end' with 'case' at 40
+/usr/local/lib/ruby/gems/2.1.0/gems/simplecov-html-0.8.0/lib/simplecov-html.rb:58: warning: possibly useless use of a variable in void context
 [Coveralls] Set up the SimpleCov formatter.
 [Coveralls] Using SimpleCov's default settings.
-Run options: --seed 6679
+Run options: --seed 36710
 
 # Running tests:
 
-.................................................................................................................
+.
 
-Finished tests in 0.094789s, 1192.1214 tests/s, 1951.7033 assertions/s.
+Finished tests in 0.001385s, 722.0217 tests/s, 722.0217 assertions/s.
 
-113 tests, 185 assertions, 0 failures, 0 errors, 0 skips
+1 tests, 1 assertions, 0 failures, 0 errors, 0 skips
 [Coveralls] Outside the Travis environment, not sending data.
 ```
 
@@ -77,6 +83,8 @@ $ rm -r ~/work/mygem    # and possibly rm -r ~/work if it is now empty
 
 - ./_test will run all business/unit tests.  Leave a terminal window open during development and
 run ./_test as you make changes to code.
+
+- ./_lint will run various checks against the source code, typically looking for things that cropped up in the TODO list, such as a change in naming convention; in this case, the checks will ensure that the old names are not used anywhere. Warning: the checks are not sophisticated and may report things that are in fact not erroneous. 
 
 - ./_build will create the gem file mygem-1.0.1.gem
 
