@@ -24,6 +24,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |vagrant_config|
     Install  :Git                                         # source is on github
     Install  :Homebrew                                    # used to install Ruby
     Install  :Ruby
+    Install  :Bundler
     Install  :TextMate
     Git      :Clone, PROJECT_GITHUB_URL, PROJECT_VM_DIR    
     Bundle   :Install, PROJECT_VM_DIR
