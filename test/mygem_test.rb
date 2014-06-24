@@ -6,7 +6,7 @@ module MyGem
       proc do
         @argv = []
         MyGem.run(@argv)
-      end.must_output "Hello, MyGem"
+      end.must_output "Hello, MyGem\n"
     end
   end
 end
