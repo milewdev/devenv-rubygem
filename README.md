@@ -1,4 +1,4 @@
-### Bootstrapping
+### Copying this Template
 This is a template Ruby gem project.  To use it:
 
 - Copy this template project to a new one on github and then launch it in a vm.  For example:
@@ -17,13 +17,16 @@ This is a template Ruby gem project.  To use it:
   $ git commit -S -m "Initial commit"
   $ git remote add origin https://github.com/your_github_account/new_project.git
   $ git push origin master
+  
   # This deletes everything except the Vagrantfile:
   $ find * -maxdepth 0 -name 'Vagrantfile' -prune -o -exec rm -rf '{}' ';'
+  
   $ vagrant up --provider=vmware_fusion
   ```
 - Register your new repo with Travis CI, Coveralls, Code Climate, and Gemnasium.
-- Replace all occurrences of roughgem and devenv-rubygem with your project name.
+- Replace all occurrences of roughgem and devenv-rubygem with your project name.  This includes file and directory names (e.g. lib/roughgem/roughgem.rb).
 - Modify this README file to suit your project: remove these notes, fill in the description for 'What is ...?', fix the documentation links, etc.
+- Run ./_test, ./_lint, ./_build and ./_install, and address any issues.
 - Push your changes to github.
 - Verify that [Travis CI](https://travis-ci.org), [Code Climate](https://codeclimate.com), [Coveralls](https://coveralls.io), and [Gemnasium](https://gemnasium.com/) work.
 
