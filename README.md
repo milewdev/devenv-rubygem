@@ -2,7 +2,6 @@
 This is a template Ruby gem project.  To use it:
 
 - Copy this template project to a new one.  For example:
-
   ```
   $ git clone https://github.com/milewgit/devenv-rubygem.git /Users/you/work/new_project
   $ cd /Users/you/work/new_project
@@ -11,12 +10,11 @@ This is a template Ruby gem project.  To use it:
   $ git add .
   $ git commit -S -m "Initial commit"
   
-  # create a new_project repo in your github account
+  # Now create a new_project repo in your github account, then do:
   
   $ git remote add origin https://github.com/your_github_account/new_project.git
   $ git push origin master
   ```
-
 - Register your new repo with Travis CI, Coveralls, Code Climate, and Gemnasium.
 - Replace all occurrences of roughgem and devenv-rubygem with your project name.
 - Modify this README file to suit your project: remove these notes, fill in the description for 'What is ...?', fix the documentation links, etc.
@@ -117,7 +115,7 @@ run ./_test as you make changes to code.
 
 - ./_lint will run various checks against the source code, typically looking for things that cropped up in the TODO list, such as a change in naming convention; in this case, the checks will ensure that the old names are not used anywhere. Warning: the checks are not sophisticated and may report things that are in fact not erroneous. 
 
-- ./_build will create the gem file roughgem-1.0.1.gem
+- ./_build will create the gem file roughgem-x.y.z.gem
 
 - ./_install will install the gem locally.
 
