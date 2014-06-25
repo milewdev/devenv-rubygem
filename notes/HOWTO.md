@@ -26,5 +26,5 @@ $ git tag
 
 ### Publish to RubyGems.org
 ```Shell
-$ gem push tchart-x.y.z.gem
+$ gem push roughgem-x.y.z.gem
 ```
