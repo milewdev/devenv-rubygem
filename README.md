@@ -1,27 +1,32 @@
-<span style="color:red">
 ### Notes
-This is a template Ruby gem git project.  To use it you should:
+This is a template Ruby gem project.  To use it:
 
 - Copy this template project to a new one.  For example:
 
   ```
-  $ git clone https://github.com/milewgit/devenv-rubygem.git /Users/you/your_work/your_new_project
-  $ cd /Users/you/your_work/your_new_project
+  $ git clone https://github.com/milewgit/devenv-rubygem.git /Users/you/work/new_project
+  $ cd /Users/you/work/new_project
   $ rm -rf .git
   $ git init
   $ git add .
   $ git commit -S -m "Initial commit"
-  # create a new repo in your github account
-  $ git remote add origin https://github.com/your_github_account/your_new_project.git
+  
+  # create a new_project repo in your github account
+  
+  $ git remote add origin https://github.com/your_github_account/new_project.git
   $ git push origin master
   ```
 
 - Register your new repo with Travis CI, Coveralls, Code Climate, and Gemnasium.
 - Replace all occurrences of mygem and devenv-rubygem with your project name.
-- Modify this README file to suit your project: remove these red notes, fill in the description for 'What is ...?', etc.
+- Modify this README file to suit your project: remove these notes, fill in the description for 'What is ...?', fix the documentation links, etc.
 - Push your changes to github.
-- Verify that Travis CI, Coveralls, Code Climate, and Gemnasium work.
-</span>
+- Verify that [Travis CI](https://travis-ci.org), [Code Climate](https://codeclimate.com), [Coveralls](https://coveralls.io), and [Gemnasium](https://gemnasium.com/) work.
+
+<br>
+<br>
+<br>
+
 
 
 [![Gem Version](https://badge.fury.io/rb/mygem.svg)](http://badge.fury.io/rb/mygem)
