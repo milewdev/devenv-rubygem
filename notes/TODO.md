@@ -1,7 +1,7 @@
 ### TODO
 - Copy the devenv-ruby repo into a new repo.
 - Register new repo with Travis CI, Coveralls, Code Climate, and Gemnasium.
-- Replace all occurrences of mygem and devenv-rubygem with new project name.
+- Replace all occurrences of roughgem and devenv-rubygem with new project name.
 - Modify README file to suit the new project.
 
 

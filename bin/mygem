@@ -1,5 +1,0 @@
-#!/usr/bin/env ruby
-
-require 'mygem'
-
-MyGem.run(ARGV)

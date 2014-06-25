@@ -18,7 +18,7 @@ This is a template Ruby gem project.  To use it:
   ```
 
 - Register your new repo with Travis CI, Coveralls, Code Climate, and Gemnasium.
-- Replace all occurrences of mygem and devenv-rubygem with your project name.
+- Replace all occurrences of roughgem and devenv-rubygem with your project name.
 - Modify this README file to suit your project: remove these notes, fill in the description for 'What is ...?', fix the documentation links, etc.
 - Push your changes to github.
 - Verify that [Travis CI](https://travis-ci.org), [Code Climate](https://codeclimate.com), [Coveralls](https://coveralls.io), and [Gemnasium](https://gemnasium.com/) work.
@@ -29,19 +29,19 @@ This is a template Ruby gem project.  To use it:
 
 
 
-[![Gem Version](https://badge.fury.io/rb/mygem.svg)](http://badge.fury.io/rb/mygem)
+[![Gem Version](https://badge.fury.io/rb/roughgem.svg)](http://badge.fury.io/rb/roughgem)
 [![Build Status](https://travis-ci.org/milewgit/devenv-rubygem.svg?branch=master)](https://travis-ci.org/milewgit/devenv-rubygem)
 [![Code Climate](https://codeclimate.com/github/milewgit/devenv-rubygem.png)](https://codeclimate.com/github/milewgit/devenv-rubygem)
 [![Coverage Status](https://coveralls.io/repos/milewgit/devenv-rubygem/badge.png?branch=master)](https://coveralls.io/r/milewgit/devenv-rubygem?branch=master)
 [![Dependencies](https://gemnasium.com/milewgit/devenv-rubygem.svg)](https://gemnasium.com/milewgit/devenv-rubygem)
 
 
-### What is mygem?
+### What is roughgem?
 TODO: FILL IN DESCRIPTION HERE
 
 
 ### Documentation
-[Here](http://milewgit.github.io/mygem.doc/) (documentation source is [here](https://github.com/milewgit/mygem.doc)).
+[Here](http://milewgit.github.io/roughgem.doc/) (documentation source is [here](https://github.com/milewgit/roughgem.doc)).
 
 
 ### Development Setup
@@ -56,9 +56,9 @@ TODO: FILL IN DESCRIPTION HERE
 #####Install:
 In a terminal window on the host machine:
 ```
-$ mkdir -p ~/work/mygem
-$ cd ~/work/mygem
-$ curl -L https://raw.github.com/milewgit/mygem/master/Vagrantfile -o Vagrantfile
+$ mkdir -p ~/work/roughgem
+$ cd ~/work/roughgem
+$ curl -L https://raw.github.com/milewgit/roughgem/master/Vagrantfile -o Vagrantfile
 $ vagrant up --provider=vmware_fusion
 ...
 ```
@@ -66,7 +66,7 @@ $ vagrant up --provider=vmware_fusion
 #####Check installation:
 In a terminal window on the vm (guest machine):
 ```
-$ cd ~/Documents/mygem
+$ cd ~/Documents/roughgem
 $ ./_test
 --------------------------------------------------------------------------------
 /usr/local/Cellar/ruby/2.1.2_2/lib/ruby/2.1.0/rubygems/defaults/operating_system.rb:2: warning: method redefined; discarding old default_dir
@@ -100,32 +100,32 @@ pushed any and all code changes to GitHub beforehand.
 
 In a terminal window on the host machine:
 ```
-$ cd ~/work/mygem
+$ cd ~/work/roughgem
 $ vagrant destroy -f
 $ cd ~
-$ rm -r ~/work/mygem    # and possibly rm -r ~/work if it is now empty
+$ rm -r ~/work/roughgem    # and possibly rm -r ~/work if it is now empty
 ```
 
 
 #####Development Notes:
 - branch **master** contains the latest version of the application code.  Older releases have their own branches.
 
-- `bin/mygem` launches the application; it simply calls the program's main entry point, MyGem::run (`lib/mygem/mygem.rb`).
+- `bin/roughgem` launches the application; it simply calls the program's main entry point, RoughGem::run (`lib/roughgem/roughgem.rb`).
 
 - ./_test will run all business/unit tests.  Leave a terminal window open during development and
 run ./_test as you make changes to code.
 
 - ./_lint will run various checks against the source code, typically looking for things that cropped up in the TODO list, such as a change in naming convention; in this case, the checks will ensure that the old names are not used anywhere. Warning: the checks are not sophisticated and may report things that are in fact not erroneous. 
 
-- ./_build will create the gem file mygem-1.0.1.gem
+- ./_build will create the gem file roughgem-1.0.1.gem
 
 - ./_install will install the gem locally.
 
-- If you wish to modify the Vagrantfile, it is best to do so on the host machine (~/work/mygem/Vagrantfile) 
+- If you wish to modify the Vagrantfile, it is best to do so on the host machine (~/work/roughgem/Vagrantfile) 
 so that you can easily do an edit/vagrant up/vagrant destroy cycle.  Once you have finished making 
 changes, vagrant up and then in a terminal window on the vm do something like:
     ```
-    $ cd ~/Documents/mygem
+    $ cd ~/Documents/roughgem
     $ cp /vagrant/Vagrantfile .
     $ git status
     ...
