@@ -1,19 +1,25 @@
-### Notes
+### Bootstrapping
 This is a template Ruby gem project.  To use it:
 
-- Copy this template project to a new one.  For example:
+- Copy this template project to a new one on github and then launch it in a vm.  For example:
   ```
+  # Create a new_project repo in your github account, then do:
+  
   $ git clone https://github.com/milewgit/devenv-rubygem.git /Users/you/work/new_project
   $ cd /Users/you/work/new_project
+  
+  # Edit the Vagrantfile and change the PROJECT_NAME constant value at the top of
+  # the file to your new_project name, then do:
+  
   $ rm -rf .git
   $ git init
   $ git add .
   $ git commit -S -m "Initial commit"
-  
-  # Now create a new_project repo in your github account, then do:
-  
   $ git remote add origin https://github.com/your_github_account/new_project.git
   $ git push origin master
+  # This deletes everything except the Vagrantfile:
+  $ find * -maxdepth 0 -name 'Vagrantfile' -prune -o -exec rm -rf '{}' ';'
+  $ vagrant up --provider=vmware_fusion
   ```
 - Register your new repo with Travis CI, Coveralls, Code Climate, and Gemnasium.
 - Replace all occurrences of roughgem and devenv-rubygem with your project name.
