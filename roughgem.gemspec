@@ -3,13 +3,13 @@ require "./lib/roughgem/version"
 Gem::Specification.new do |s|
   s.name                        = "roughgem"
   s.version                     = RoughGem::Version
-  s.homepage                    = "https://github.com/milewgit/roughgem"
+  s.homepage                    = "https://github.com/milewdev/roughgem"
   s.summary                     = "roughgem project."
   s.description                 = <<-EOS
                                   roughgem project description.
                                   EOS
   s.author                      = "Michael Lewandowski"
-  s.email                       = "milewgit@gmail.com"
+  s.email                       = "milewdev@gmail.com"
   s.license                     = "MIT"
   s.requirements                = [ "Ruby 2" ]
   s.platform                    = Gem::Platform::RUBY

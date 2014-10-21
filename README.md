@@ -4,23 +4,23 @@ This is a template Ruby gem project.  To use it:
 - Copy this template project to a new one on github and then launch it in a vm.  For example:
   ```
   # Create a new_project repo in your github account, then do:
-  
-  $ git clone https://github.com/milewgit/devenv-rubygem.git /Users/you/work/new_project
+
+  $ git clone https://github.com/milewdev/devenv-rubygem.git /Users/you/work/new_project
   $ cd /Users/you/work/new_project
-  
+
   # Edit the Vagrantfile and change the PROJECT_NAME constant value at the top of
   # the file to your new_project name, then do:
-  
+
   $ rm -rf .git
   $ git init
   $ git add .
   $ git commit -S -m "Initial commit"
   $ git remote add origin https://github.com/your_github_account/new_project.git
   $ git push origin master
-  
+
   # This deletes everything except the Vagrantfile:
   $ find * -maxdepth 0 -name 'Vagrantfile' -prune -o -exec rm -rf '{}' ';'
-  
+
   $ vagrant up --provider=vmware_fusion
   ```
 - Register your new repo with Travis CI, Coveralls, Code Climate, and Gemnasium.
@@ -37,10 +37,10 @@ This is a template Ruby gem project.  To use it:
 
 
 [![Gem Version](https://badge.fury.io/rb/roughgem.svg)](http://badge.fury.io/rb/roughgem)
-[![Build Status](https://travis-ci.org/milewgit/devenv-rubygem.svg?branch=master)](https://travis-ci.org/milewgit/devenv-rubygem)
-[![Code Climate](https://codeclimate.com/github/milewgit/devenv-rubygem.png)](https://codeclimate.com/github/milewgit/devenv-rubygem)
-[![Coverage Status](https://coveralls.io/repos/milewgit/devenv-rubygem/badge.png?branch=master)](https://coveralls.io/r/milewgit/devenv-rubygem?branch=master)
-[![Dependencies](https://gemnasium.com/milewgit/devenv-rubygem.svg)](https://gemnasium.com/milewgit/devenv-rubygem)
+[![Build Status](https://travis-ci.org/milewdev/devenv-rubygem.svg?branch=master)](https://travis-ci.org/milewdev/devenv-rubygem)
+[![Code Climate](https://codeclimate.com/github/milewdev/devenv-rubygem.png)](https://codeclimate.com/github/milewdev/devenv-rubygem)
+[![Coverage Status](https://coveralls.io/repos/milewdev/devenv-rubygem/badge.png?branch=master)](https://coveralls.io/r/milewdev/devenv-rubygem?branch=master)
+[![Dependencies](https://gemnasium.com/milewdev/devenv-rubygem.svg)](https://gemnasium.com/milewdev/devenv-rubygem)
 
 
 ### What is roughgem?
@@ -48,7 +48,7 @@ TODO: FILL IN DESCRIPTION HERE
 
 
 ### Documentation
-[Here](http://milewgit.github.io/roughgem.doc/) (documentation source is [here](https://github.com/milewgit/roughgem.doc)).
+[Here](http://milewdev.github.io/roughgem.doc/) (documentation source is [here](https://github.com/milewdev/roughgem.doc)).
 
 
 ### Development Setup
@@ -65,7 +65,7 @@ In a terminal window on the host machine:
 ```
 $ mkdir -p ~/work/roughgem
 $ cd ~/work/roughgem
-$ curl -L https://raw.github.com/milewgit/roughgem/master/Vagrantfile -o Vagrantfile
+$ curl -L https://raw.github.com/milewdev/roughgem/master/Vagrantfile -o Vagrantfile
 $ vagrant up --provider=vmware_fusion
 ...
 ```
@@ -102,7 +102,7 @@ Finished tests in 0.001385s, 722.0217 tests/s, 722.0217 assertions/s.
 ```
 
 #####Uninstall:
-**WARNING**: This will completely destroy the vm so you likely want to ensure that you have 
+**WARNING**: This will completely destroy the vm so you likely want to ensure that you have
 pushed any and all code changes to GitHub beforehand.
 
 In a terminal window on the host machine:
@@ -122,14 +122,14 @@ $ rm -r ~/work/roughgem    # and possibly rm -r ~/work if it is now empty
 - ./_test will run all business/unit tests.  Leave a terminal window open during development and
 run ./_test as you make changes to code.
 
-- ./_lint will run various checks against the source code, typically looking for things that cropped up in the TODO list, such as a change in naming convention; in this case, the checks will ensure that the old names are not used anywhere. Warning: the checks are not sophisticated and may report things that are in fact not erroneous. 
+- ./_lint will run various checks against the source code, typically looking for things that cropped up in the TODO list, such as a change in naming convention; in this case, the checks will ensure that the old names are not used anywhere. Warning: the checks are not sophisticated and may report things that are in fact not erroneous.
 
 - ./_build will create the gem file roughgem-x.y.z.gem
 
 - ./_install will install the gem locally.
 
-- If you wish to modify the Vagrantfile, it is best to do so on the host machine (~/work/roughgem/Vagrantfile) 
-so that you can easily do an edit/vagrant up/vagrant destroy cycle.  Once you have finished making 
+- If you wish to modify the Vagrantfile, it is best to do so on the host machine (~/work/roughgem/Vagrantfile)
+so that you can easily do an edit/vagrant up/vagrant destroy cycle.  Once you have finished making
 changes, vagrant up and then in a terminal window on the vm do something like:
     ```
     $ cd ~/Documents/roughgem
